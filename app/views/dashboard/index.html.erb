@@ -1,0 +1,14 @@
+<header>
+  <h1>
+    Welcome to I.R.R.I.S., <%= current_user.email %>
+  </h1>
+  <h2>
+    We're Using Rails <%= Rails.version %>
+  </h2>
+</header>
+<section>
+  <p>
+    Future home of IRRIS's dashboard
+  </p>
+  <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+</section>
